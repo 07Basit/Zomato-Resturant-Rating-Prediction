@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zomato Predictor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+  </head>
+
+  <body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{url_for('index')}}">Predictor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <a class="nav-link" href="about">About</a>
+              <a class="nav-link" href="services">Services</a>
+              <a class="nav-link" href="contact">Contact</a>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+<div class="align-items-center">
+  <h2 align="center">About</h2>
+</div>
+    <div class="col-lg-4">
+      <img src="static/images/img2.jpg" class="img-fluid" alt=""> 
+    </div>
+
+      <div class="content ps-lg-5">
+        <p><b>Zomato is an online restaurant discovery and food delivery platform that provides usergenerated reviews and ratings for restaurants.
+          Our project makes use of Machine Learning model to display ratings of a particular
+          restaurant, given the required inputs.<br>
+          Potential use case of Zomato rating prediction is to help restaurant owners improve
+          their ratings by identifying areas for improvement.<br>
+          Overall, the goal of Zomato rating prediction is to help restaurant owners improve
+          their ratings and attract more customers, leading to increased revenue and business
+          growth.
+        </b></p>
+        <p><b>
+          While we select the features and split the data for testing, we have to keep in mind that the
+          data which is to be inputted on the website, wont be encoded and thus we have to create a
+          pipeline and then save the model so that data which is present at hand gets encoded before
+          serving as a input to the model <br>
+          In this scenario, we use the machine learning model “Random Forest”, as it gives us the most
+          relevant, realistic, and optimised results. 
+          When comparing with other models, Random forest outperforms other model by a very large
+          margin and brings us the best accuracy
+        </b></p>
+      </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
