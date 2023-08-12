@@ -1,0 +1,18 @@
+.content{
+    margin: 25px 0;
+    color: #626467;
+}
+
+img {
+    padding: 30px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+p {
+    display: inline;
+    font-family: 'Roboto';
+    font-size: 17px;
+}
+
